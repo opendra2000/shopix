@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VTS72N4LZH"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-VTS72N4LZH');
+	</script>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style.css">
+	<title>Input Clients | Shopix</title>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="logo desktop">
+				<img src="../img/logo.png" alt="">
+			</div>
+
+			<ul class="nav-list">
+				<li><a class="" href="../index.html"><span>Homepage</span></a></li>
+				<li><a class="margin-left desktop" href="../imprint.html"><span>Imprint</span></a></li>
+				<li><a class="button-link margin-left" href="../maintenance.php"><span>Maintenance</span></a></li>
+			</ul>
+		</div>
+
+		<form action="clients.php" class="input-form" method="POST">
+			<h2>Input Clients</h2>
+			<p>This is an input form to add instances for 'Clients' table.</p>
+			<p><u><a href="clientsall.php">View full table</a></u></p>
+			
+			<label for="client-name">Client Name</label>
+			<input type="text" name="client-name" placeholder="John Doe" required>
+
+			<label for="client-birth">Day of birth</label>
+			<input type="date" name="client-birth" placeholder="John Doe" required>
+
+			<label for="client-username">Username</label>
+			<input type="text" name="client-username" placeholder="pokemon123" required>
+
+			<label for="client-password">Password</label>
+			<input type="password" name="client-password" placeholder="pokemon321" required>
+			
+			<button class="submit-btn" type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VTS72N4LZH"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-VTS72N4LZH');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style.css">
+	<title>Find Shops Query | Shopix</title>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="logo desktop">
+				<img src="../img/logo.png" alt="">
+			</div>
+
+			<ul class="nav-list">
+				<li><a class="" href="../index.html"><span>Homepage</span></a></li>
+				<li><a class="margin-left desktop" href="../imprint.html"><span>Imprint</span></a></li>
+				<li><a class="button-link margin-left" href="../maintenance.php"><span>Maintenance</span></a></li>
+			</ul>
+		</div>
+
+		<form action="shop_at_location.php" class="input-form" method="POST">
+			<h2>Find shops in specific location</h2>
+			<p>Select shop location</p>
+			<p><u><a href="../inputs/shopsall.php">View full table of shops</a></u></p>
+
+			<label for="shop-location">LOCATION</label>
+			<select name="shop-location" id="">
+				<option value="Hamburg">Hamburg</option>
+				<option value="Bremen">Bremen</option>
+				<option value="Munich">Munich</option>
+				<option value="Berlin">Berlin</option>
+				<option value="Bremen">Bremen</option>
+			</select>
+
+			<button class="submit-btn" type="submit">View results</button>
+		</form>
+	</div>
+</body>
+</html>

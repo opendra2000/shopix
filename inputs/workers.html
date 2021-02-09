@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VTS72N4LZH"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-VTS72N4LZH');
+	</script>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style.css">
+	<title>Input Workers | Shopix</title>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="logo desktop">
+				<img src="../img/logo.png" alt="">
+			</div>
+
+			<ul class="nav-list">
+				<li><a class="" href="../index.html"><span>Homepage</span></a></li>
+				<li><a class="margin-left desktop" href="../imprint.html"><span>Imprint</span></a></li>
+				<li><a class="button-link margin-left" href="../maintenance.php"><span>Maintenance</span></a></li>
+			</ul>
+		</div>
+
+		<form action="workers.php" class="input-form" method="POST">
+			<h2>Input Workers</h2>
+			<p>This is an input form to add instances for 'Workers' table.</p>
+			<p><u><a href="workersall.php">View full table</a></u></p>
+
+			<label for="worker-name">Worker's Name</label>
+			<input type="text" name="worker-name" placeholder="John Doe" required>
+
+			<label for="worker-position">Position</label>
+			<select name="worker-position" id="">
+				<option value="Stocker">Stocker</option>
+				<option value="Salesman">Salesman</option>
+				<option value="Manager">Manager</option>
+				<option value="Marketing Specialist">Marketing Specialist</option>
+				<option value="Accountant">Accountant</option>
+			</select>
+
+			<button class="submit-btn" type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
