@@ -22,6 +22,7 @@ create table Workers(
     position varchar(20),
     primary key(id)
 );
+
 create table Products(
     id int auto_increment not null,
     name varchar(40),
